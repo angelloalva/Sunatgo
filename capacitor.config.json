@@ -1,0 +1,9 @@
+{
+  "appId": "pe.gob.sunatgo.app",
+  "appName": "SUNAT Go",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
