@@ -1,0 +1,7 @@
+{
+  "name": "SUNAT Go!",
+  "description": "Aplicación educativa gamificada para aprender cultura tributaria y aduanera de la SUNAT en Perú para niños y jóvenes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
