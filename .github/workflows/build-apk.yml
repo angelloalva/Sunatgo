@@ -17,17 +17,22 @@ jobs:
       - name: 🟢 Configurar Bun
         uses: oven-sh/setup-bun@v2
 
+      - name: 🟩 Configurar Node.js 22 (requerido por Capacitor CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: 📦 Instalar dependencias web
         run: bun install --frozen-lockfile
 
       - name: 🏗️ Compilar frontend web (Vite)
         run: npx vite build
 
-      - name: ☕ Configurar Java JDK 17
+      - name: ☕ Configurar Java JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: "temurin"
-          java-version: "17"
+          java-version: "21"
 
       - name: 📱 Configurar Capacitor Android
         run: |
