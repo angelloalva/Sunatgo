@@ -14,14 +14,11 @@ jobs:
       - name: 📥 Clonar repositorio
         uses: actions/checkout@v4
 
-      - name: 🟢 Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
+      - name: 🟢 Configurar Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: 📦 Instalar dependencias web
-        run: npm ci || npm install
+        run: bun install --frozen-lockfile
 
       - name: 🏗️ Compilar frontend web (Vite)
         run: npx vite build
